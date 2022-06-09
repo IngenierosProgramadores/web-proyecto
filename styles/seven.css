@@ -1,0 +1,67 @@
+.seven-section {
+  background-color: white;
+  height: auto;
+  padding: 10%;
+}
+.seven-content {
+  display: flex;
+  box-shadow: -3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 5%;
+  text-align: justify;
+}
+.seven-left {
+  width: 50%;
+  position: relative;
+}
+.seven-left h2 {
+  font-family: Montserrat-Bold;
+}
+.seven-left a {
+  background-color: #c70000;
+  text-decoration: none;
+  color: white;
+  padding: 2% 12%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+.left-button {
+  display: flex;
+  justify-content: center;
+}
+
+.seven-right {
+  width: 50%;
+}
+.seven-right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .seven-content {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+  .seven-left {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+  .seven-left p {
+    text-align: justify;
+  }
+  .seven-right {
+    width: 100%;
+  }
+  .seven-right img {
+    position: static;
+    width: 100%;
+    max-width: max-content;
+  }
+
+  .seven-left a {
+    position: relative;
+  }
+}

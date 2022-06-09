@@ -1,0 +1,145 @@
+.two-sections {
+  background-color: white;
+  background-image: url("../assets/five-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.five-section {
+  height: auto;
+  display: flex;
+}
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+.left-side h5 {
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+}
+
+.title-five img {
+  width: 70%;
+  padding: 10%;
+  max-width: 500px;
+}
+.text-five {
+  padding: 3% 15%;
+}
+.right-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.right-side img {
+  width: 100%;
+  position: relative;
+  right: 10%;
+}
+.five-icons {
+  padding: 15%;
+  padding-top: 7%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  position: sticky;
+  text-align: center;
+  font-size: x-small;
+}
+.five-icons img {
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.six-section {
+  height: auto;
+  display: flex;
+}
+.six-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.six-left img {
+  width: 100%;
+  position: relative;
+  left: 10%;
+}
+.six-right {
+  width: 50%;
+  background-color: #444441;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding: 5%;
+  padding-left: 10%;
+}
+.six-right h2 {
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+.six-right h5 {
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  line-height: 30px;
+}
+.six-right p {
+  padding-bottom: 2%;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .five-section {
+    display: block;
+  }
+  .left-side {
+    width: 100%;
+    text-align: center;
+  }
+  .five-icons {
+    padding: 5% 10%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .five-icons img {
+    height: 40px;
+  }
+  .title-five img {
+    padding: 3%;
+    padding-top: 5%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .right-side img {
+    position: static;
+    width: 100%;
+    max-width: max-content;
+  }
+  .six-section {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+  .six-left {
+    width: 100%;
+  }
+  .six-left img {
+    position: static;
+    width: 100%;
+    max-width: max-content;
+  }
+  .six-right {
+    width: 100%;
+    padding: 5%;
+    padding-top: 10%;
+    text-align: justify;
+  }
+  .six-right h2 {
+    padding-bottom: 5%;
+  }
+}

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+.second {
+  min-height: min-content;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.second-left {
+  height: 100%;
+  background-color: #444441;
+  width: 50%;
+  /* font-weight: bold; */
+  color: #fff;
+}
+.second-left h2 {
+  margin: 10%;
+  font-family: Montserrat-Bold;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.second-left p {
+  margin: 0 13%;
+  text-align: justify;
+}
+.second-right {
+  width: 50%;
+}
+.svg {
+  margin: 0 13% 0 5%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.svg img {
+  max-width: 100px;
+}
+.svg-content {
+  display: flex;
+}
+
+.second-right img {
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  top: 20%;
+  left: -10%;
+  box-shadow: -3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.second-certificacion {
+  width: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: end;
+}
+.second-certificacion img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1025px) {
+  .second {
+    display: block;
+  }
+  .second-left {
+    width: 100%;
+  }
+  .second-left h2 {
+    padding-top: 20px;
+    font-family: Montserrat-Bold;
+    text-align: justify;
+    margin: 0 5%;
+    margin-bottom: 20px;
+  }
+  .second-right {
+    width: 100%;
+    background-color: #444441;
+  }
+  .second-right img {
+    position: static;
+    width: 100%;
+    max-width: max-content;
+  }
+}
